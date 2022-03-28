@@ -1,0 +1,69 @@
+body, #wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.btn_reload {
+	margin-bottom: 20px;
+}
+
+.btn_reload a {
+	display: block;
+	width: 80%;
+	max-width: 260px;
+	margin: 0 auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: #01b264;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 0.875rem;
+	transition: .3s ease;
+}
+
+.btn_reload a:hover {
+	background: #016839;
+	transition: .3s ease;
+}
+
+.btn_reload a i {
+	margin-right: 0.5em;
+}
+
+/* 5 Columns */
+
+.col-15, .col-sm-15, .col-md-15, .col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+	width: 20%;
+	flex: 0 0 20%;
+}
+}
+
+@media (min-width: 992px) {
+.col-md-15 {
+	width: 20%;
+	flex: 0 0 20%;
+}
+}
+
+@media (min-width: 1200px) {
+.col-lg-15 {
+	width: 20%;
+	flex: 0 0 20%;
+}
+}
