@@ -1,4 +1,4 @@
-#JankenTime
+#janken_time
 仮想環境を立ち上げて、
 pip install django
 pip install django-allauth
