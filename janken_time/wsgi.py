@@ -1,5 +1,5 @@
 """
-WSGI config for design_test project.
+WSGI config for janken_time project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'design_test.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'janken_time.settings')
 
 application = get_wsgi_application()
