@@ -66,7 +66,7 @@ def list_topics(request): # 以下追記箇所
       print(obj.text)
       text_list.append(obj.text)
     text_dict2[i] = text_list
-  print(text_list)
+  # print(text_list)
   print('text_dict2')
   print(text_dict2)
   #     for j in len(texts):
