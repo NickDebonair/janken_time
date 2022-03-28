@@ -59,6 +59,7 @@
     </tr>
   </thread>
   <tbody>
+      {% if topic %}
   {% for topic in topics %}
     <tr>
       <td>{% paginated_plus forloop.counter topics.number %}</td>
@@ -88,6 +89,7 @@
       {% comment %} {% endif %} {% endcomment %}
     </tr>
   {% endfor %}
+  {% endif %}
   </tbody>
 </table>
 {% comment %} {% if is_paginated %}
