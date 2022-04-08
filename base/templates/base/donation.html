@@ -28,7 +28,7 @@
 {% block contents %}
     <div class="content-top">
         <div class="container">
-        <h1><p>Donation!!</p>
+        <h1><p>Donation!!　　　　　　　寄付額: {{ user.donations }}$</p>
             <p><input type="number" id="price" min="5.00" name="price" size="6" style="text-align:right" value="5.00" required>USD</p></h1>
         <div id="paypal-button-container"></div>
         </div>
@@ -124,8 +124,6 @@
                         console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
                         var transaction = orderData.purchase_units[0].payments.captures[0];
                         alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
-                        completeOrder()
-                        window.location.href = "{% url 'base:complete' %}";
                         
                         // Replace the above to show a success message within this page, e.g.
                         // const element = document.getElementById('paypal-button-container');
@@ -133,6 +131,8 @@
                         // element.innerHTML = '<h3>Thank you for your payment!</h3>';
                         // Or go to another URL:  actions.redirect('thank_you.html');
                     });
+                    completeOrder()
+                    window.location.href = "{% url 'base:complete' %}";
                 }
     
     
