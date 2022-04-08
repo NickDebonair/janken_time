@@ -76,7 +76,7 @@
   {{ post_text_form.as_p }}
   <input type = "button" value="save" id="save_text">
   <input type = "submit" value="sending text">
-  <p><button type="button" onclick="history.back()">一覧へ戻る</button></p>
+  <p><button type="button" onclick="location.href='{% url 'board_app:list_topics' %}'">一覧へ戻る</button></p>
   </form>
 </div>
 {% else %}
