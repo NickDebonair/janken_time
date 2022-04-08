@@ -164,7 +164,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 
 ACCOUNT_EMAIL_SUBJECT_PREFIX = ''
 
-DEFAULT_FROM_EMAIL = 'admin@example.com'
+DEFAULT_FROM_EMAIL = 'kgwtmhk@gmail.com'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
