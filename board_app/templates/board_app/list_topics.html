@@ -149,7 +149,7 @@
       </li>
   </ul>
 </nav>   {% endcomment %}  
-{% if topics.has_other_pages %}
+{% comment %} {% if topics.has_other_pages %}
     <nav aria-label="Page navigation example">
       <ul class="pagination">
           {% if topics.has_previous %}
@@ -181,7 +181,7 @@
       </ul>
   </nav>
 {% endif %}
-
+ {% endcomment %}
 </div>
 </div>
 {% endblock %}
