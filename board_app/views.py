@@ -229,7 +229,7 @@ def profile(request, user_id):
 '''
 Ranking
 '''
-def ranking(request, rule='wins_rate'):
+def ranking(request, rule='wins'):
   if rule == 'wins_rate':
     users = CustomUser.objects.order_by('-wins_rate').all()
   elif rule == 'matches':
