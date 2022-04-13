@@ -41,7 +41,7 @@
                         {% csrf_token %}
                         <div class="row">
                             <div class="defeat" style="display: none">
-                            <img style="display: none" class="defeat" src="https://i.ytimg.com/vi/XmrdIJxhPz0/hqdefault.jpg">
+                            <img style="display: none" class="defeat" src={{ flags.0.picture.url }}>
                             </div>
                             <div class="losemessage"></div>
                             {% if request.session.number_index.0 %}
@@ -91,7 +91,7 @@
                     </a>
                     <h4>戦況</h4>
                     <div class="victory" style="display: none">
-                    <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/cc5ba853065555.Y3JvcCw2MzQsNDk2LDYyOSwxNjI.png">
+                    <img src={{ flags.1.picture.url }}>
                     </div>
                     <div class="winmessage"></div>
                     <div class="row">

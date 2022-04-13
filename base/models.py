@@ -58,3 +58,7 @@ Option Enemy
 
 class Enemy(models.Model):
     picture = models.FileField(verbose_name='image', null=True, upload_to='enemy/')
+
+
+class Flag(models.Model):
+    picture = models.FileField(verbose_name='image', null=True, upload_to='flag/')
