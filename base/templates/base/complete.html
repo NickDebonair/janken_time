@@ -35,7 +35,7 @@
 <div class="container">
     <h4>Thank you for your Donation.</h4>
     {% comment %} <h4>{{ amount }} Dollars!!</h4> {% endcomment %}
-    <button type="button" onclick="history.back()">戻る</button>
+    <button type="button" onclick="location.href='{% url 'base:donation' %}'">戻る</button>
 </div>
 </div>
 
